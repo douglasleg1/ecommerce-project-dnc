@@ -7,7 +7,6 @@ import SearchBar from "../../components/SearchBar/SearchBar";
 
 const Products = ({ data }) => {
   const { productsId } = useParams();
-  console.log(productsId);
   const selectedProduct = data.find((product) => product.id == productsId);
   return (
     <section className="product">
