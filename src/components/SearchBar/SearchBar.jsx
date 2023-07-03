@@ -10,7 +10,7 @@ const SearchBar = () => {
         <img id="searchIcon" src={searchIcon} alt=''></img>
         <input type='text' name='searchBar' placeholder='O que você está procurando?'></input>
         <img src={profileIcon} alt=''></img>
-        <img src={hearthIcon} alt=''></img>
+        <img id="heart-icon" src={hearthIcon} alt=''></img>
     </section>
   )
 }
