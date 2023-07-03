@@ -63,7 +63,7 @@ const ProductDetail = ({ data }) => {
           ))}
         </div>
         <button>
-          <Link to={`/pay/${data.id}`}>Finalizar Compra</Link>
+          <Link to={`/checkout/${data.id}`}>Finalizar Compra</Link>
         </button>
       </div>
     </div>

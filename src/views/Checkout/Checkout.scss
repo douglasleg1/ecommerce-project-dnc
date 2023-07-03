@@ -1,0 +1,127 @@
+@use "../../sass/variables" as *;
+
+.checkout{
+    font-family: 'Raleway', sans-serif;
+    display: flex;
+    flex-direction: row;
+    margin-top: 80px;
+    margin-left: 150px;
+    margin-right: 500px;
+    justify-content: space-between;
+}
+
+.detail-client{
+    display: flex;
+    flex-direction: column;
+}
+
+.input-labels{
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+
+    input{
+        margin-top: 10px;
+        width: 554px;
+        height: 42px;
+        border-radius: 10px;
+        border: $border-input-color solid 1px;
+        padding: 10px;
+    }
+}
+
+.methods-payments{
+    margin-top: 40px;
+    margin-bottom: 50px;
+
+    ul{
+        margin-top: 20px;
+    }
+
+    li{
+        list-style: none;
+        display: flex;
+        align-items: center;
+        margin-bottom: 5px;
+
+        img{
+            width: 25px;
+            margin-right: 10px;
+        }
+    }
+
+}
+
+.methods-payments{
+    li:hover{
+        font-weight: 800;
+        transition: 0.5s;
+    }
+}
+
+.button-area {
+
+    button{
+        background-color: $contrast-color;
+        color: $white;
+        border: none;
+        width: 554px;
+        height: 48px;
+        border-radius: 10px;
+        font-size: 18px;
+        font-weight: 800;
+    }
+
+    button:hover{
+        transform: translateY(-5px);
+        transition: 0.5s;
+    }
+}
+
+.detail-order{
+    position: relative;
+    margin-top: 40px;
+    margin-left: 120px;
+    padding-top: 10px;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+
+    ul{
+        display: flex;
+        flex-direction: row;
+    }
+
+    li{
+        width: 450px;
+        display: flex;
+        justify-content: space-between;
+        list-style: none;
+        margin-top: 50px;
+        
+    }
+
+    p{
+        font-weight: 800;
+    }
+    
+    img#background{
+        position: absolute;
+        width: 400px;
+        top: -10px;
+        left: -10px;
+    }
+
+    img#line-order{
+        position: absolute;
+        width: 300px;
+        left: 40px;
+        top: 120px;
+    }
+    
+}
+
+.priceProduct{
+    font-weight: 800;
+}

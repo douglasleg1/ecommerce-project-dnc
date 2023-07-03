@@ -23,7 +23,7 @@ const router = createBrowserRouter([
   },
   {
     path: '/checkout/:checkoutId',
-    element: <Checkout/>,
+    element: <Checkout data={PRODUCTS_MOCK}/>,
   },
 
 ]);
