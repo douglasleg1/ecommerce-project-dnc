@@ -41,7 +41,7 @@ const ProductDetail = ({ data }) => {
                 borderRadius: "10px",
                 backgroundColor: color,
               }}
-            ></div>
+            id="square"></div>
           ))}
         </div>
         <p>Tamanho:</p>
