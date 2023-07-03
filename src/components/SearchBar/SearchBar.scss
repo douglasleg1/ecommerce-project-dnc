@@ -1,0 +1,33 @@
+@use "../../sass/variables" as *;
+
+
+.searchBar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    font-family: 'Raleway', sans-serif;
+
+
+    input{
+        border: $border-input-color solid 1px;
+        border-radius: 15px;
+        width: 1100px;
+        height: 48px;
+        padding-left: 50px
+    }
+
+    img{
+        margin-left: 30px;
+    }
+
+    img:hover{
+        transform: translateY(-5px);
+        transition: 1s;
+    }
+
+    img#searchIcon{
+        position: absolute;
+        left: 90px;
+    }
+}

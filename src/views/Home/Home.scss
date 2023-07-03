@@ -1,5 +1,6 @@
-.Home{
-    button{
-        background-color: red;
-    }
+@use "../../sass/variables" as *;
+
+
+.home{
+    font-family: 'Raleway', sans-serif;
 }
