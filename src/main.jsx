@@ -6,6 +6,7 @@ import Login from './views/Login/Login.jsx';
 import Home from './views/Home/Home.jsx';
 import Products from './views/Products/Products';
 import Checkout from './views/Checkout/Checkout';
+import { PRODUCTS_MOCK } from "./mock/products.mock";
 
 const router = createBrowserRouter([
   {
@@ -14,11 +15,11 @@ const router = createBrowserRouter([
   },
   {
     path: '/home',
-    element: <Home/>,
+    element: <Home data={PRODUCTS_MOCK}/>,
   },
   {
     path: '/products/:productsId',
-    element: <Products/>,
+    element: <Products data={PRODUCTS_MOCK}/>,
   },
   {
     path: '/checkout/:checkoutId',

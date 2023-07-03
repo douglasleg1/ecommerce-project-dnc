@@ -1,6 +1,66 @@
 @use "../../sass/variables" as *;
 
+.home {
+  font-family: 'Raleway', sans-serif;
+  margin-bottom: 50px;
 
-.home{
-    font-family: 'Raleway', sans-serif;
+  &__products {
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4rem;
+    justify-content: center;
+  }
+  &__card {
+    width: 330px;
+    height: 337px;
+    border: solid 1px $border-background-card;
+    border-radius: 8px;
+  }
+
+  &__card img{
+    border-radius: 8px;
+    width: 329px;
+    
+  }
+
+  &__card-description {
+    padding: 16px;
+    text-align: center;
+
+    p {
+      padding-bottom: 11px;
+    }
+
+    p:hover{
+        font-weight: 800;
+        transition: 0.5s;
+    }
+
+    button {
+      height: 30px;
+      width: 128px;
+      background-color: $contrast-color;
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 20px;
+      border: none;
+      border-radius: 8px;
+    }
+
+    button:hover{
+        background-color: $white;
+        border: $contrast-color solid 1px;
+        transition: 0.5s;
+    }
+
+    a {
+      text-decoration: none;
+      color: $white;
+    }
+
+    a:hover{
+        color: $contrast-color !important;
+    }
+  }
 }

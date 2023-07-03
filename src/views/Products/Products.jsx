@@ -1,13 +1,21 @@
-import React from 'react'
-import { Link } from "react-router-dom"
+import React from "react";
+import { useParams } from "react-router-dom";
+import ProductDetail from "../../components/ProductDetail/ProductDetail";
 import "./Products.scss";
+import HeaderStore from "../../components/HeaderStore/HeaderStore";
+import SearchBar from "../../components/SearchBar/SearchBar";
 
-const Products = () => {
+const Products = ({ data }) => {
+  const { productsId } = useParams();
+  console.log(productsId);
+  const selectedProduct = data.find((product) => product.id == productsId);
   return (
-    <div>Products
-            <button><Link to={`/`}>Login</Link></button>
-    </div>
-  )
-}
+    <section className="product">
+      <HeaderStore />
+      <SearchBar />
+      <ProductDetail data={selectedProduct} />
+    </section>
+  );
+};
 
-export default Products
+export default Products;
